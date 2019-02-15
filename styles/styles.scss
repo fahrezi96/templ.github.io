@@ -97,6 +97,61 @@ span.mobile-tbl-header {
     display: none;
 }
 
+table.table {
+    tr th:first-child, tr td:first-child {
+        vertical-align: top;
+        text-align: center;
+    }
+
+    thead tr:first-child {
+        @extend %gradient;
+        color: white;
+
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+            border: solid 1px white;
+            border-radius: 3px;
+        }
+    }
+}
+
+div.action-btn {
+    display: flex;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: all .2s;
+
+        i {font-size: 16px;}
+
+        &:first-child {
+            background-color: $blue; 
+            color: white;
+            border: solid 1px $blue;
+
+            &:hover {
+                background-color: white;
+                color: $blue;
+            }
+        }
+        &:last-child {
+            background-color: $red; 
+            color: white;
+            border: solid 1px $red;
+
+            &:hover {
+                background-color: white;
+                color: $red;
+            }
+        }
+    }
+}
+
 // SIDEBAR SECTION
 div.sidebar-section {
     @extend %gradient;

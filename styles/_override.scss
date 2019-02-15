@@ -2,28 +2,34 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: solid 1px $grey;
+    border-bottom: solid 2px lightgray;
     outline: none;
     font-size: 12px;
     width: 100%;
     transition: all .3s;
+    padding: 3px;
 
     &:focus {
-        border-bottom: solid 1px $blue;
+        border-bottom: solid 2px $blue;
     }
 }
 
 input.input-item, textarea.input-item {
     @extend %input-item;
+
+    &:disabled {
+        background-color: #fafafa;
+        &::placeholder {
+            color: lightgray;
+        }
+    }
 }
 
 div.input-wrapper {
-    // position: relative;
     margin-bottom: 10px;
 }
 
 div.login-container div.input-wrapper {
-    // position: relative;
     margin-bottom: 20px;
 }
 
@@ -62,6 +68,14 @@ h2 {font-size: 22px; margin-bottom: 0;}
 h3 {font-size: 20px; margin-bottom: 10px;}
 p {margin-bottom: 0;}
 
-.table tbody td, .table thead th {
-    vertical-align: top;
+
+.table {
+    border: solid 1px lightgray;
+    margin-bottom: 0;
+
+    tbody td, thead th {
+        vertical-align: middle;
+        border-bottom: solid 1px lightgray;
+        padding: 8px 5px;
+    }
 }
