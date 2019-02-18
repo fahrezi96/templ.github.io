@@ -98,3 +98,15 @@ input[type=file] {display: none;}
     width: 100%;
     padding: 7px;
 }
+
+.datepicker-modal, .timepicker-modal {
+    height: auto;
+}
+
+.datepicker-cancel, .datepicker-done, .timepicker-close {
+    @include x-btn($blue);
+    color: white!important;
+    margin-left: 5px;
+
+    &:hover {color: $blue!important;}
+}

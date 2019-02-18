@@ -8,6 +8,7 @@
     <title>Form Controls</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -193,18 +194,46 @@
                                                     <textarea class="input-item" placeholder="Descriptions"></textarea>
                                                 </div>
                                             </div>
+
                                             <div class="col-sm-6">
                                                 <div class="input-wrapper file-container">
                                                     <label class="btn-blue btn-file"> Choose File
                                                         <input type="file"/>
                                                     </label>
-                                                    <div class="file-item input-item">
+                                                    <div class="file-item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-wrapper">
+                                                    <input type="text" class="input-item datepicker" placeholder="Select Date">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-wrapper">
+                                                    <input type="text" class="input-item timepicker" placeholder="Select Time">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12">
-                                               <button class="btn-blue">SUBMIT</button>
+                                                <div class="input-wrapper input-field">
+                                                    <select>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="input-wrapper">
+                                                    <button class="btn-blue">SUBMIT</button>    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -223,6 +252,9 @@
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/popper.min.js"></script>
+
+    <script src="scripts/materialize.min.js"></script>
+
     <script src="scripts/scripts.js"></script>
 
     <script>
@@ -242,6 +274,18 @@
                 let thisBtnFile = thisFileItem.prev(".btn-file");
                 thisBtnFile.trigger("click");
             });
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let datePicker = document.querySelectorAll('.datepicker');
+            let instDatePicker = M.Datepicker.init(datePicker);
+
+            let timePicker = document.querySelectorAll('.timepicker');
+            let instTimePicker = M.Timepicker.init(timePicker);
+
+            let select = document.querySelectorAll('select');
+            let instSelect = M.FormSelect.init(select);
         });
     </script>
 </body>
