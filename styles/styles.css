@@ -481,7 +481,7 @@ input.input-item, textarea.input-item {
   border-left: none;
   border-bottom: solid 2px lightgray;
   outline: none;
-  font-size: 12px;
+  font-size: 14px !important;
   width: 100%;
   transition: all .3s;
   padding: 3px; }
@@ -494,7 +494,7 @@ input.input-item:disabled, textarea.input-item:disabled {
     color: lightgray; }
 
 div.input-wrapper {
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
 div.login-container div.input-wrapper {
   margin-bottom: 20px; }
@@ -569,6 +569,23 @@ input[type=file] {
     border: solid 2px #2196f3; }
   .datepicker-cancel:hover, .datepicker-done:hover, .timepicker-close:hover {
     color: #2196f3 !important; }
+
+.modal {
+  height: auto; }
+
+div.modal-header {
+  color: white;
+  border-radius: 0; }
+
+div.modal-content {
+  border: none;
+  border-radius: 0;
+  background-color: inherit; }
+
+div.modal-footer {
+  border: none;
+  border-radius: 0;
+  display: block; }
 
 html {
   box-sizing: border-box; }
@@ -2119,7 +2136,7 @@ li {
 .remove-margin {
   margin-left: 0 !important; }
 
-div.title-section, table.table thead tr:first-child, div.sidebar-section, ul.nav-child-wrapper, div.login-box-wrapper button.login-btn {
+div.modal-header, div.title-section, table.table thead tr:first-child, div.sidebar-section, ul.nav-child-wrapper, div.login-box-wrapper button.login-btn {
   background: linear-gradient(45deg, #00AEFF 50%, #3369E6 100%); }
 
 div.header-container {
