@@ -90,6 +90,39 @@ $light-grey: #f5f5f5;
 .border-black { border: solid 1px black; }
 .border-white { border: solid 1px white; }
 
+@mixin x-btn($color) {
+    background-color: $color; 
+    color: white;
+    border: solid 2px $color;
+    border-radius: 0;
+    transition: all .2s;
+    display: inline-block;
+    padding: 5px 10px;
+    &:hover {background-color: white; color: $color; border: solid 2px $color;}
+}
+
+.btn-red { @include x-btn($red); }
+.btn-pink { @include x-btn($pink); }
+.btn-purple { @include x-btn($purple);}
+.btn-deep-purple { @include x-btn($deep-purple); }
+.btn-indigo { @include x-btn($indigo); }
+.btn-blue { @include x-btn($blue); }
+.btn-light-blue { @include x-btn($light-blue); }
+.btn-cyan { @include x-btn($cyan); }
+.btn-teal { @include x-btn($teal); }
+.btn-green { @include x-btn($green); }
+.btn-light-green { @include x-btn($light-green); }
+.btn-lime { @include x-btn($lime); }
+.btn-yellow { @include x-btn($yellow); }
+.btn-amber { @include x-btn($amber); }
+.btn-orange { @include x-btn($orange); }
+.btn-deep-orange { @include x-btn($deep-orange); }
+.btn-brown { @include x-btn($brown); }
+.btn-grey { @include x-btn($grey); }
+.btn-light-grey { @include x-btn($light-grey); }
+.btn-blue-grey { @include x-btn($blue-grey); }
+.btn-black { @include x-btn(black); }
+
 // OTHER
 .radius-0 {border-radius: 0;}
 .content-padding {padding: 10px 15px;}

@@ -194,10 +194,17 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <!-- <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">Choose file</label>
-                                                </div> -->
+                                                <div class="input-wrapper file-container">
+                                                    <label class="btn-blue btn-file"> Choose File
+                                                        <input type="file"/>
+                                                    </label>
+                                                    <div class="file-item input-item">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                               <button class="btn-blue">SUBMIT</button>
                                             </div>
                                         </div>
                                     </div>
@@ -217,5 +224,25 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/popper.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let btnFile = $(".btn-file");
+            let fileItem = $(".file-item");
+
+            btnFile.change(function() {
+                let thisBtnFile = $(this);
+                let thisFileItem = thisBtnFile.parent(".file-container").children(".file-item");
+                thisBtnFile = event.srcElement;
+                thisFileItem.text(thisBtnFile.files[0].name);
+            });
+
+            fileItem.click(function() {
+                let thisFileItem = $(this);
+                let thisBtnFile = thisFileItem.prev(".btn-file");
+                thisBtnFile.trigger("click");
+            });
+        });
+    </script>
 </body>
 </html>
