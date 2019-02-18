@@ -552,6 +552,8 @@ input[type=file] {
 
 .datepicker-modal, .timepicker-modal {
   height: auto; }
+  .datepicker-modal .modal-content, .timepicker-modal .modal-content {
+    padding: 0 !important; }
 
 .datepicker-cancel, .datepicker-done, .timepicker-close {
   background-color: #2196f3;
@@ -576,11 +578,14 @@ input[type=file] {
 div.modal-header {
   color: white;
   border-radius: 0; }
+  div.modal-header h4 {
+    margin: 0; }
 
 div.modal-content {
   border: none;
   border-radius: 0;
-  background-color: inherit; }
+  background-color: inherit;
+  padding: 20px !important; }
 
 div.modal-footer {
   border: none;

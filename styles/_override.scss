@@ -101,6 +101,10 @@ input[type=file] {display: none;}
 
 .datepicker-modal, .timepicker-modal {
     height: auto;
+
+    .modal-content {
+        padding: 0!important;
+    }
 }
 
 .datepicker-cancel, .datepicker-done, .timepicker-close {
@@ -119,12 +123,17 @@ div.modal-header {
     @extend %gradient;
     color: white;
     border-radius: 0;
+
+    h4 {
+        margin: 0;
+    }
 }
 
 div.modal-content {
     border: none;
     border-radius: 0;
     background-color: inherit;
+    padding: 20px!important;
 }
 
 div.modal-footer {
