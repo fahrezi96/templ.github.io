@@ -607,7 +607,8 @@ div.modal-footer {
     margin-bottom: 5px; }
 
 table.dataTable.no-footer {
-  border-bottom: solid 1px lightgray; }
+  border-bottom: solid 1px lightgray;
+  width: 100% !important; }
 
 table.dataTable thead th, table.dataTable thead td {
   padding: 8px 10px;
