@@ -13,7 +13,7 @@ $(document).ready(function() {
     });
 
     $(".toggle-btn a").click(function() {
-        $(".sidebar-section").toggleClass("hide");
+        $(".sidebar-section").toggleClass("hide-nav");
         $(".main-section").toggleClass("remove-margin");
         // $(".nav-child-wrapper").slideUp();
     });

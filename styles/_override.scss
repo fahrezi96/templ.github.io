@@ -141,3 +141,19 @@ div.modal-footer {
     border-radius: 0;
     display: block;
 }
+
+.dropdown-menu {
+    border: none!important;
+    border-radius: 0!important;
+    box-shadow: 0px 1px 1px darkgrey;
+}
+
+.btn-sect {
+    display: flex;
+    flex-wrap: wrap;
+
+    button, a, input[type=submit] {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}

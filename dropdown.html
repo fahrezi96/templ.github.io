@@ -158,9 +158,32 @@
                         </nav>
                     </div>
                     <div class="body-section bg-light-grey content-padding">
-                        <div class="content-wrapper white content-padding">
-                            <h3 class="content-title">Some Title</h3>
-                            <div class="content-body"><p>Some Text...</p></div>
+                        <div class="content-wrapper white content-padding d-flex">
+                            <div class="dropdown">
+                                <button class="btn btn-grey dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            &nbsp;
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-blue">Action</button>
+                                <button type="button" class="btn btn-blue dropdown-toggle dropdown-toggle-split" 
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,8 +195,8 @@
     </div>
 
     <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/materialize.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
