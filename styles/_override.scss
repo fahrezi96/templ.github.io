@@ -76,6 +76,7 @@ p {margin-bottom: 0;}
     tbody td, thead th {
         vertical-align: middle;
         border-bottom: solid 1px lightgray;
+        border-top: solid 1px transparent;
         padding: 8px 5px;
     }
 }
@@ -172,6 +173,11 @@ div.global-container table.table tr th:first-child, div.global-container  table.
 }
 
 div.global-container {
+
+    .custom-checkbox {
+        text-align: center;
+    }
+
     input:not([type]), input[type=text]:not(.browser-default), 
     input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), 
     input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), 

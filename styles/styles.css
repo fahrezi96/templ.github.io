@@ -532,6 +532,7 @@ p {
   .table tbody td, .table thead th {
     vertical-align: middle;
     border-bottom: solid 1px lightgray;
+    border-top: solid 1px transparent;
     padding: 8px 5px; }
 
 .file-container {
@@ -615,6 +616,8 @@ table.dataTable thead th, table.dataTable thead td {
 div.global-container table.table tr th:first-child, div.global-container table.table tr td:first-child {
   text-align: left; }
 
+div.global-container .custom-checkbox {
+  text-align: center; }
 div.global-container input:not([type]), div.global-container input[type=text]:not(.browser-default),
 div.global-container input[type=password]:not(.browser-default), div.global-container input[type=email]:not(.browser-default),
 div.global-container input[type=url]:not(.browser-default), div.global-container input[type=time]:not(.browser-default),
