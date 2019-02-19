@@ -605,6 +605,62 @@ div.modal-footer {
     margin-right: 5px;
     margin-bottom: 5px; }
 
+table.dataTable.no-footer {
+  border-bottom: solid 1px lightgray; }
+
+table.dataTable thead th, table.dataTable thead td {
+  padding: 8px 10px;
+  border-bottom: solid 1px lightgray; }
+
+div.global-container table.table tr th:first-child, div.global-container table.table tr td:first-child {
+  text-align: left; }
+
+div.global-container input:not([type]), div.global-container input[type=text]:not(.browser-default),
+div.global-container input[type=password]:not(.browser-default), div.global-container input[type=email]:not(.browser-default),
+div.global-container input[type=url]:not(.browser-default), div.global-container input[type=time]:not(.browser-default),
+div.global-container input[type=date]:not(.browser-default), div.global-container input[type=datetime]:not(.browser-default),
+div.global-container input[type=datetime-local]:not(.browser-default), div.global-container input[type=tel]:not(.browser-default),
+div.global-container input[type=number]:not(.browser-default), div.global-container input[type=search]:not(.browser-default), div.global-container textarea.materialize-textarea {
+  height: 30px; }
+div.global-container .dataTables_wrapper select {
+  display: inline-block;
+  height: 35px;
+  margin: 0 5px; }
+div.global-container .dataTables_wrapper .dataTables_filter label, div.global-container .dataTables_wrapper .dataTables_length label {
+  display: flex;
+  align-items: center; }
+  div.global-container .dataTables_wrapper .dataTables_filter label input, div.global-container .dataTables_wrapper .dataTables_length label input {
+    margin-left: 5px; }
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #2196f3;
+  color: white;
+  border: solid 2px #2196f3;
+  border-radius: 0;
+  transition: all .2s;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #2196f3;
+  color: white !important; }
+  div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+  div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover:hover,
+  div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button:hover:hover {
+    background-color: white;
+    color: #2196f3;
+    border: solid 2px #2196f3; }
+  div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+  div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover:hover,
+  div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button:hover:hover {
+    color: #2196f3 !important; }
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 5px 10px;
+  border: solid 2px transparent; }
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+div.global-container .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  border: 1px solid transparent; }
+
 html {
   box-sizing: border-box; }
 
