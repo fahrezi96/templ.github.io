@@ -2372,6 +2372,8 @@ div.title-section {
 
 div.logo-section {
   width: 50px; }
+  div.logo-section a i {
+    margin-right: 0; }
 
 div.text-section a {
   color: white; }
@@ -2528,5 +2530,11 @@ div.login-footer p {
   div.sidebar-section {
     width: 0;
     box-shadow: 2px 0 5px lightgrey; } }
+@media only screen and (max-width: 576px) {
+  div.text-section {
+    display: none; }
+
+  div.title-section {
+    width: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */
