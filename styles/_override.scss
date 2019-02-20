@@ -27,6 +27,11 @@ input.input-item, textarea.input-item {
 
 div.input-wrapper {
     margin-bottom: 10px;
+
+    input {
+        height: 30px!important;
+        margin-bottom: 0!important;
+    }
 }
 
 div.login-container div.input-wrapper {

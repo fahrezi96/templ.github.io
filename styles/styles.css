@@ -496,6 +496,9 @@ input.input-item:disabled, textarea.input-item:disabled {
 
 div.input-wrapper {
   margin-bottom: 10px; }
+  div.input-wrapper input {
+    height: 30px !important;
+    margin-bottom: 0 !important; }
 
 div.login-container div.input-wrapper {
   margin-bottom: 20px; }
@@ -2350,6 +2353,9 @@ li {
 .remove-margin {
   margin-left: 0 !important; }
 
+.show-nav {
+  width: 250px !important; }
+
 div.modal-header, div.title-section, table.table thead tr:first-child, div.sidebar-section, ul.nav-child-wrapper, div.login-box-wrapper button.login-btn {
   background: linear-gradient(45deg, #00AEFF 50%, #3369E6 100%); }
 
@@ -2508,5 +2514,19 @@ div.login-body {
 
 div.login-footer p {
   font-size: 14px; }
+
+@media only screen and (max-width: 768px) {
+  div.right-section {
+    flex-basis: 25%; }
+
+  div.left-section {
+    flex-basis: 75%; }
+
+  div.main-section {
+    margin-left: 0; }
+
+  div.sidebar-section {
+    width: 0;
+    box-shadow: 2px 0 5px lightgrey; } }
 
 /*# sourceMappingURL=styles.css.map */
