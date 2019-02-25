@@ -166,33 +166,38 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="input-wrapper">
-                                                    <input type="text" class="input-item" placeholder="Username">
+                                                <div class="input-field">
+                                                    <input id="username" type="text" class="validate">
+                                                    <label for="username">Username</label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="input-wrapper">
-                                                    <input type="password" class="input-item" placeholder="Password">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="input-wrapper">
-                                                    <input type="text" class="input-item" placeholder="Disabled" disabled>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="input-wrapper">
-                                                    <input type="password" class="input-item" placeholder="Email">
+                                                <div class="input-field">
+                                                    <input id="password" type="password" class="validate">
+                                                    <label for="password">Password</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="input-wrapper">
-                                                    <textarea class="input-item" placeholder="Descriptions"></textarea>
+                                                <div class="input-field">
+                                                    <input disabled id="disabled" type="text" class="validate">
+                                                    <label for="disabled">Disabled</label>
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-field">
+                                                    <input id="email" type="email" class="validate">
+                                                    <label for="email">Email</label>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-field">
+                                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Textarea</label>
+                                                  </div>
                                             </div>
 
                                             <div class="col-sm-6">
@@ -202,16 +207,25 @@
                                                     </label>
                                                     <div class="file-item"></div>
                                                 </div>
+                                                <!-- <div class="file-field input-field">
+                                                    <div class="btn">
+                                                      <span>File</span>
+                                                      <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                      <input class="file-path validate" type="text">
+                                                    </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="input-wrapper">
+                                                <div class="input-field">
                                                     <input type="text" class="input-item datepicker" placeholder="Select Date">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="input-wrapper">
+                                                <div class="input-field">
                                                     <input type="text" class="input-item timepicker" placeholder="Select Time">
                                                 </div>
                                             </div>

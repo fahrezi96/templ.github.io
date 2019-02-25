@@ -1,7 +1,6 @@
 // sass --watch styles.scss:styles.css
 
 @import "_resources.scss";
-@import "_override.scss";
 @import "_variables.scss";
 @import "_global.scss";
 @import "_dropdown.scss";
@@ -12,6 +11,8 @@
 @import "_timepicker.scss";
 @import "_tabs.scss";
 @import "_collapsible.scss";
+
+@import "_override.scss";
 
 // GLOBAL
 body {
@@ -48,7 +49,7 @@ li {list-style-type: none;}
 
 // HEADER SECTION
 div.header-container {
-    height: 70px;
+    height: 60px;
     position: fixed;
     z-index: 3;
     top: 0;
@@ -70,7 +71,7 @@ div.logo-section {
 }
 
 div.text-section {
-    a {color: white;}
+    a {color: white; font-size: 32px;}
 }
 
 div.head-nav-section {
@@ -95,7 +96,7 @@ div.toggle-btn {
 
 // MAIN SECTION
 div.main-container {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 div.main-section {

@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $(window).resize(function() { 
         let nav = document.getElementsByClassName("sidebar-section")[0];
-        nav.style.height = String(Number(window.innerHeight) - 70) + "px";
+        nav.style.height = String(Number(window.innerHeight) - 60) + "px";
 
         let main = document.getElementsByClassName("main-body-section")[0];
         main.style.minHeight = String(Number(window.innerHeight) - 114) + "px";
@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
 
     let nav = document.getElementsByClassName("sidebar-section")[0];
-    nav.style.height = String(Number(window.innerHeight) - 70) + "px";
+    nav.style.height = String(Number(window.innerHeight) - 60) + "px";
 
     let main = document.getElementsByClassName("main-body-section")[0];
     main.style.minHeight = String(Number(window.innerHeight) - 114) + "px";
