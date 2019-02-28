@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Muhamad Irgi Fahrezi">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="global-container">
+        <div class="container">
+            <br>
+            <h3>Tooltip Example</h3>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>
+        </div>
+        <br>
+        <div class="container">
+            <h3>Popover Example</h3>
+            <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+        </div>
+    </div>
+
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/popper.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>

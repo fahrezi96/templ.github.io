@@ -1,36 +1,45 @@
 $(document).ready(function() {
 
+    // side nav container height
+    var sideNav = $('.side-nav-container');
+    var sideHeight = String(Number(window.innerHeight) - 60) + "px";
+    sideNav.css('height', sideHeight);
+
+    // body section height
+    var body = $('.body-section');
+    var mainHeight = String(Number(window.innerHeight) - 185) + "px";
+    body.css('min-height', mainHeight);
+
+    // collapse menu
     $(".collapsible-trigger").click(function(){
         $(this).next().slideToggle();
     });
 
+    // toggle side nav
+    // if(Number(window.innerWidth) > 768) {
+        $(".toggle-btn a").click(function() {
+            sideNav.toggleClass("hide-nav");
+            $(".main-container").toggleClass("remove-margin");
+            // $(".collapsible-target").slideUp();
+        });
+    // }
+
+    // if(Number(window.innerWidth) <= 768) {
+        // $(".toggle-btn a").click(function() {
+        //     sideNav.toggleClass("hide-nav");
+            // $(".collapsible-target").slideUp();
+        // });
+    // }
+
     $(window).resize(function() { 
-        let nav = document.getElementsByClassName("sidebar-section")[0];
-        nav.style.height = String(Number(window.innerHeight) - 60) + "px";
+        // side nav container height
+        var sideNav = $('.side-nav-container');
+        var sideHeight = String(Number(window.innerHeight) - 60) + "px";
+        sideNav.css('height', sideHeight);
 
-        let main = document.getElementsByClassName("main-body-section")[0];
-        main.style.minHeight = String(Number(window.innerHeight) - 114) + "px";
+        // body section height
+        var body = $('.body-section');
+        var mainHeight = String(Number(window.innerHeight) - 185) + "px";
+        body.css('min-height', mainHeight);
     });
-
-    if(Number(window.innerWidth) > 768) {
-        $(".toggle-btn a").click(function() {
-            $(".sidebar-section").toggleClass("hide-nav");
-            $(".main-section").toggleClass("remove-margin");
-            // $(".nav-child-wrapper").slideUp();
-        });
-    }
-
-    if(Number(window.innerWidth) <= 768) {
-        $(".toggle-btn a").click(function() {
-            $(".sidebar-section").toggleClass("show-nav");
-            // $(".nav-child-wrapper").slideUp();
-        });
-    }
-
-    let nav = document.getElementsByClassName("sidebar-section")[0];
-    nav.style.height = String(Number(window.innerHeight) - 60) + "px";
-
-    let main = document.getElementsByClassName("main-body-section")[0];
-    main.style.minHeight = String(Number(window.innerHeight) - 114) + "px";
-
 });
