@@ -124,3 +124,18 @@ span.thumb {
 select {
     border-radius: 0;
 }
+
+.pagination li.active {
+    background-color: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: none;
+    background: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
