@@ -26,7 +26,7 @@ div.header-container {
     height: 60px;
     box-shadow: 0 1px 6px $deep-grey;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     background-color: white;
     top: 0;
@@ -69,7 +69,7 @@ div.right-section {
 
 ul.head-nav-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 // ASIDE
@@ -80,6 +80,7 @@ div.side-nav-container {
     transition: all .3s;
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 2;;
 }
 
 li.side-nav-item {
@@ -146,3 +147,5 @@ div.action-buttons {
 }
 
 // FOOTER
+
+@import "_responsive";

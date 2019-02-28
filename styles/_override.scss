@@ -29,6 +29,10 @@ ul, ol {
     width: 0!important;
 }
 
+.show-nav {
+    width: 250px!important;
+}
+
 .remove-margin {
     margin-left: 0!important;
 }
@@ -115,4 +119,8 @@ span.thumb {
 
 .timepicker-span-am-pm .text-primary {
     color: white!important;
+}
+
+select {
+    border-radius: 0;
 }

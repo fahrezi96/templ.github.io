@@ -7193,7 +7193,6 @@ a.close.disabled {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
   outline: 0;
 }
 
@@ -7219,8 +7218,6 @@ a.close.disabled {
   justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
 }
 .modal-header .close {
   padding: 1rem 1rem;
@@ -7244,8 +7241,6 @@ a.close.disabled {
   justify-content: flex-end;
   padding: 1rem;
   border-top: 1px solid #dee2e6;
-  border-bottom-right-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
 }
 .modal-footer > :not(:first-child) {
   margin-left: 0.25rem;
@@ -11726,6 +11721,10 @@ ul li, ol li {
   width: 0 !important;
 }
 
+.show-nav {
+  width: 250px !important;
+}
+
 .remove-margin {
   margin-left: 0 !important;
 }
@@ -11824,6 +11823,10 @@ span.thumb {
   color: white !important;
 }
 
+select {
+  border-radius: 0;
+}
+
 div.action-buttons a, div.logo-section {
   display: flex;
   justify-content: center;
@@ -11835,7 +11838,7 @@ div.header-container {
   height: 60px;
   box-shadow: 0 1px 6px #2d3436;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   background-color: white;
   top: 0;
@@ -11877,7 +11880,7 @@ div.right-section {
 
 ul.head-nav-items {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 div.side-nav-container {
@@ -11887,6 +11890,7 @@ div.side-nav-container {
   transition: all 0.3s;
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 2;
 }
 
 li.side-nav-item a {
@@ -11942,6 +11946,35 @@ div.action-buttons a i {
 }
 div.action-buttons a:hover {
   background-color: rgba(63, 81, 181, 0.8);
+}
+
+@media only screen and (max-width: 1024px) {
+  div.left-section {
+    flex-basis: 25%;
+  }
+
+  div.right-section {
+    flex-basis: 75%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div.main-container {
+    margin-left: 0;
+  }
+
+  div.side-nav-container {
+    width: 0;
+    box-shadow: 1px 1px 5px #2d3436;
+  }
+}
+@media only screen and (max-width: 576px) {
+  div.title-container {
+    width: auto;
+  }
+
+  div.text-section {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
