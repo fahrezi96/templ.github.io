@@ -108,3 +108,11 @@ span.thumb {
     background-color: transparent;
     border: none;
 }
+
+.timepicker-span-hours.text-primary, .timepicker-span-minutes.text-primary {
+    color: white!important;
+}
+
+.timepicker-span-am-pm .text-primary {
+    color: white!important;
+}

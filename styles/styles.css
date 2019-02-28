@@ -1632,13 +1632,13 @@ body.keyboard-focused .select-dropdown.dropdown-content li:focus {
 }
 .datepicker-date-display .year-text {
   display: block;
-  font-size: 1.5rem;
+  font-size: 16px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
 }
 .datepicker-date-display .date-text {
   display: block;
-  font-size: 2.8rem;
+  font-size: 28px;
   line-height: 47px;
   font-weight: 500;
 }
@@ -11814,6 +11814,14 @@ span.thumb {
 .btn-flat {
   background-color: transparent;
   border: none;
+}
+
+.timepicker-span-hours.text-primary, .timepicker-span-minutes.text-primary {
+  color: white !important;
+}
+
+.timepicker-span-am-pm .text-primary {
+  color: white !important;
 }
 
 div.action-buttons a, div.logo-section {
