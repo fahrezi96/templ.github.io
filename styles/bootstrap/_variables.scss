@@ -88,12 +88,21 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
+
+$primary:       #2980b9 !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
+$success:       #27ae60 !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$warning:       #f1c40f !default;
+$danger:        #c0392b !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 

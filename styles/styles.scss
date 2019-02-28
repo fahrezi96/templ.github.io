@@ -1,8 +1,17 @@
 // sass --watch styles.scss:styles.css
 
 @import "_resources";
-@import "bootstrap/bootstrap";
 
+@import "materialize/_variables";
+@import "materialize/_global";
+@import "materialize/_dropdown";
+// @import "_input-fields.scss";
+@import "materialize/_select";
+@import "materialize/_modal";
+@import "materialize/_datepicker";
+@import "materialize/_timepicker";
+
+@import "bootstrap/bootstrap";
 @import "_override";
 
 %perfect-center {

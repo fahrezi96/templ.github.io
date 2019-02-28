@@ -33,8 +33,8 @@ ul, ol {
     margin-left: 0!important;
 }
 
-h2 {font-size: 20px; font-weight: 600; margin-bottom: 5px;}
-h3 {font-size: 16px; font-weight: 600; margin-bottom: 5px;}
+h2 {font-size: 18px; font-weight: 600; margin-bottom: 5px;}
+h3 {font-size: 14px; font-weight: 600; margin-bottom: 5px;}
 p {font-size: 12px; margin-bottom: 0;}
 
 div.content-wrapper {
@@ -51,6 +51,7 @@ div.content-wrapper {
 .form-control:focus {
     border-color: rgba($color: $indigo, $alpha: .6);
     box-shadow: 0 0 0 0.2rem rgba($color: $indigo, $alpha: .4);
+    color: $deep-grey;
 }
 
 .form-group {
@@ -91,4 +92,18 @@ span.thumb {
     font-size: 12px;
     appearance: none;
     -webkit-appearance: none;
+}
+
+.custom-file-label {
+    height: auto;
+}
+
+.modal.datepicker-modal, .modal.timepicker-modal {
+    height: auto;
+    background-color: transparent;
+}
+
+.btn-flat {
+    background-color: transparent;
+    border: none;
 }
