@@ -180,3 +180,11 @@ select {
 .pagination li a {
     font-size: 12px;
 }
+
+button.btn, input[type=submit].btn {
+    font-size: 12px;
+}
+
+.breadcrumb:before {
+    display: none;
+}

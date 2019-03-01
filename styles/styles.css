@@ -11866,6 +11866,14 @@ select {
   font-size: 12px;
 }
 
+button.btn, input[type=submit].btn {
+  font-size: 12px;
+}
+
+.breadcrumb:before {
+  display: none;
+}
+
 div.action-buttons a, div.logo-section {
   display: flex;
   justify-content: center;
