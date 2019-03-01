@@ -96,6 +96,10 @@ div.side-nav-container {
     }
 }
 
+ul.side-nav-wrapper {
+    padding-bottom: 25px;
+}
+
 li.side-nav-item {
     a {
         color: white;
@@ -104,6 +108,7 @@ li.side-nav-item {
         align-items: center;
         padding: 10px;
         font-size: 14px;
+        border-bottom: solid 1px lightgrey;
 
         i:nth-of-type(1) {
             margin-right: 5px;
@@ -132,7 +137,6 @@ div.main-container {
     flex-grow: 1;
     margin-left: 250px;
     transition: all .3s;
-    // z-index: 1;
 }
 
 div.body-section {
