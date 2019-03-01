@@ -80,7 +80,20 @@ div.side-nav-container {
     transition: all .3s;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 2;;
+    z-index: 2;
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $grey;
+    }
 }
 
 li.side-nav-item {

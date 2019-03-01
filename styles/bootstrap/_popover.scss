@@ -14,7 +14,7 @@
   background-color: $popover-bg;
   background-clip: padding-box;
   border: $popover-border-width solid $popover-border-color;
-  @include border-radius($popover-border-radius);
+  // @include border-radius($popover-border-radius);
   @include box-shadow($popover-box-shadow);
 
   .arrow {
@@ -151,7 +151,8 @@
 
 // Offset the popover to account for the popover arrow
 .popover-header {
-  padding: $popover-header-padding-y $popover-header-padding-x;
+  // padding: $popover-header-padding-y $popover-header-padding-x;
+  padding: 5px;
   margin-bottom: 0; // Reset the default from Reboot
   @include font-size($font-size-base);
   color: $popover-header-color;
@@ -166,6 +167,7 @@
 }
 
 .popover-body {
-  padding: $popover-body-padding-y $popover-body-padding-x;
+  // padding: $popover-body-padding-y $popover-body-padding-x;
+  padding: 5px;
   color: $popover-body-color;
 }

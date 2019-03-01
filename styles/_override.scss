@@ -8,7 +8,7 @@ a {
     display: inline-block;
 
     &:hover {
-        color: black;
+        // color: black;
         text-decoration: none;
     }
 }
@@ -37,8 +37,12 @@ ul, ol {
     margin-left: 0!important;
 }
 
+h1 {font-size: 20px; font-weight: 600; margin-bottom: 5px;}
 h2 {font-size: 18px; font-weight: 600; margin-bottom: 5px;}
 h3 {font-size: 14px; font-weight: 600; margin-bottom: 5px;}
+h4 {font-size: 13px; font-weight: 600; margin-bottom: 5px;}
+h5 {font-size: 12.5px; font-weight: 600; margin-bottom: 5px;}
+h6 {font-size: 12px; font-weight: 600; margin-bottom: 5px;}
 p {font-size: 12px; margin-bottom: 0;}
 
 div.content-wrapper {
@@ -138,4 +142,41 @@ select {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+.modal {
+    background-color: transparent;
+    box-shadow: none;
+
+    .modal-header {
+        padding: 10px;
+        background-color: $indigo;
+        color: white;
+
+        h4 {font-size: 18px;}
+    }
+
+    .modal-content {
+        padding: 0;
+    }
+
+    .modal-body {
+        padding: 10px;
+    }
+
+    .modal-footer {
+        padding: 10px;
+    }
+
+    .close {
+        opacity: 1;
+        color: white;
+
+        &:hover {color: $light-grey;}
+        &:focus {outline: none;}
+    }
+}
+
+.pagination li a {
+    font-size: 12px;
 }

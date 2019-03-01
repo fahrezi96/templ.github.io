@@ -40,7 +40,7 @@
 
   .nav-link {
     border: $nav-tabs-border-width solid transparent;
-    @include border-top-radius($nav-tabs-border-radius);
+    // @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color;
@@ -75,7 +75,7 @@
 
 .nav-pills {
   .nav-link {
-    @include border-radius($nav-pills-border-radius);
+    // @include border-radius($nav-pills-border-radius);
   }
 
   .nav-link.active,
