@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Muhamad Irgi Fahrezi">
+    <title>Error 404</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+
+    <style>
+        div.error-container {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            margin-top: 20%;
+        }
+
+        div.error-box {
+            width: 420px;
+            height: 240px;
+            padding: 5px;
+            background-image: linear-gradient(to bottom left, white, lightgrey, grey);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: -10px 10px 10px 0px #2d3436;
+            transform: rotate(-2deg);
+            border-left: solid 1px grey;
+            border-bottom: solid 1px grey;
+            border-top: solid 1px lightgrey;
+            border-right: solid 1px lightgrey;
+            color: #2d3436;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: -1px 1px 1px #2d3436;
+        }
+
+        div.error-text {text-align: center;}
+
+        .top-nails, .bottom-nails {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nail {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom left, white, lightgrey, grey);
+            box-shadow: -2px 2px 5px 2px #2d3436;
+        }
+
+        div.back-link a {
+            display: inline-block;
+            padding: 2px;
+            border-bottom: dashed 1px transparent;
+        }
+
+        div.back-link a:hover {
+            border-color: #2d3436;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="error-container">
+        <div class="error-box">
+            <div class="top-nails">
+                <span class="nail"></span>
+                <span class="nail"></span>
+            </div>
+
+            <div class="error-text">
+                <h1>404</h1>
+                <p>Page Not Found</p>
+            </div>
+
+            <div class="back-link">
+                <a href="../index.html">Back To Dashboard</a>
+            </div>
+
+            <div class="bottom-nails">
+                <span class="nail"></span>
+                <span class="nail"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/scripts/jquery.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
+
+    <script src="../assets/scripts/scripts.js"></script>
+</body>
+
+</html>
