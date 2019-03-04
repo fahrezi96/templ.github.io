@@ -11951,6 +11951,7 @@ div.side-nav-container::-webkit-scrollbar-thumb {
 }
 
 ul.side-nav-wrapper {
+  padding-top: 2px;
   padding-bottom: 25px;
 }
 
@@ -12008,6 +12009,48 @@ div.action-buttons a i {
 }
 div.action-buttons a:hover {
   background-color: rgba(63, 81, 181, 0.8);
+}
+
+div.login-box {
+  width: 320px;
+  box-shadow: 0px 2px 2px lightgrey;
+}
+
+div.login-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+div.login-box-wrapper button.btn-login {
+  border: none;
+  padding: 7px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+  background-color: #3f51b5;
+}
+div.login-box-wrapper button.btn-login:hover {
+  background-color: rgba(63, 81, 181, 0.8);
+  border-radius: 15px;
+}
+
+div.login-header h1 {
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+div.login-body {
+  margin: 30px 0;
+  width: 250px;
+}
+
+div.login-footer p {
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 1024px) {
