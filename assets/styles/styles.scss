@@ -5,7 +5,6 @@
 @import "materialize/_variables";
 @import "materialize/_global";
 @import "materialize/_dropdown";
-// @import "_input-fields.scss";
 @import "materialize/_select";
 @import "materialize/_modal";
 @import "materialize/_datepicker";
@@ -110,6 +109,7 @@ li.side-nav-item {
         padding: 10px;
         font-size: 14px;
         border-bottom: solid 1px lightgrey;
+        transition: all .3s;
 
         i:nth-of-type(1) {
             margin-right: 5px;
