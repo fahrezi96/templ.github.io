@@ -118,7 +118,7 @@ $theme-colors: map-merge(
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark,
-    "custom":     $indigo
+    "custom":     $custom-color
   ),
   $theme-colors
 );
@@ -203,7 +203,7 @@ $body-color:                $gray-900 !default;
 
 $link-color:                              theme-color("custom") !default;
 $link-decoration:                         none !default;
-$link-hover-color:                        darken($indigo, 15%) !default;
+$link-hover-color:                        darken($custom-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;

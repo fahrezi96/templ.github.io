@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta author="Muhamad Irgi Fahrezi">
-    <title>Login</title>
+    <title>Sign In</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,16 +15,16 @@
 </head>
 
 <body>
-    <div class="login-container bg-light-grey d-flex justify-content-center align-items-center">
-        <div class="login-box bg-white content-padding">
-            <div class="login-box-wrapper">
-                <div class="login-header">
+    <div class="auth-container bg-light-grey d-flex justify-content-center align-items-center">
+        <div class="auth-box bg-white content-padding">
+            <div class="auth-box-wrapper">
+                <div class="auth-header">
                     <h1>Welcome</h1>
                     <div class="logo">
                         <i class="material-icons">spa</i> 
                     </div>
                 </div>
-                <div class="login-body">
+                <div class="auth-body">
                     <form>
                         <div class="form-group">
                             <input type="text" class="form-control form-control-sm" placeholder="Email">
@@ -33,12 +33,12 @@
                             <input type="password" class="form-control form-control-sm" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <button class="btn-login">LOGIN</button>
+                            <button class="btn-auth">SIGN IN</button>
                         </div>
                     </form>
                 </div>
-                <div class="login-footer">
-                    <p>Don't have an account? <a class="txt-indigo" href="javascript:;">Sign Up</a></p>
+                <div class="auth-footer">
+                    <p>Don't have an account? <a class="txt-indigo" href="./register.html">Sign Up</a></p>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
     <script>
         $(document).ready(function () {
             let height =  String(window.innerHeight) + "px";
-            $(".login-container").css("height", height);
+            $(".auth-container").css("height", height);
         });
     </script>
 </body>

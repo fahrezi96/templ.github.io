@@ -57,8 +57,8 @@ div.content-wrapper {
 }
 
 .form-control:focus {
-    border-color: rgba($color: $indigo, $alpha: .6);
-    box-shadow: 0 0 0 0.2rem rgba($color: $indigo, $alpha: .4);
+    border-color: rgba($color: $custom-color, $alpha: .6);
+    box-shadow: 0 0 0 0.2rem rgba($color: $custom-color, $alpha: .4);
     color: $deep-grey;
 }
 
@@ -150,7 +150,7 @@ select {
 
     .modal-header {
         padding: 10px;
-        background-color: $indigo;
+        background-color: $custom-color;
         color: white;
 
         h4 {font-size: 18px;}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Muhamad Irgi Fahrezi">
+    <title>Sign Up</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+
+</head>
+
+<body>
+    <div class="auth-container bg-light-grey d-flex justify-content-center align-items-center">
+        <div class="auth-box bg-white content-padding">
+            <div class="auth-box-wrapper">
+                <div class="auth-header">
+                    <h1>Register Account</h1>
+                    <div class="logo">
+                        <i class="material-icons">spa</i> 
+                    </div>
+                </div>
+                <div class="auth-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-sm" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-auth">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="auth-footer">
+                    <p>Don't have an account? <a class="txt-indigo" href="javascript:;">Sign Up</a></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../assets/scripts/jquery.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
+
+    <script src="../assets/scripts/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let height =  String(window.innerHeight) + "px";
+            $(".auth-container").css("height", height);
+        });
+    </script>
+</body>
+
+</html>

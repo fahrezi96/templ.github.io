@@ -35,7 +35,7 @@ div.header-container {
 div.title-container {
     display: flex;
     align-items: center;
-    background-color: rgba($color: $indigo, $alpha: .7);
+    background-color: rgba($color: $custom-color, $alpha: .7);
     width: 250px;
 }
 
@@ -74,7 +74,7 @@ ul.head-nav-items {
 
 // ASIDE
 div.side-nav-container {
-    background-color: $indigo;
+    background-color: $custom-color;
     position: fixed;
     width: 250px;
     transition: all .3s;
@@ -140,6 +140,10 @@ div.main-container {
     transition: all .3s;
 }
 
+div.head-section {
+    margin-top: 10px;
+}
+
 div.body-section {
     padding-top: 10px;
 }
@@ -147,7 +151,7 @@ div.body-section {
 div.action-buttons {
     display: flex;
     a {
-        background-color: $indigo;
+        background-color: $custom-color;
         width: 25px;
         height: 25px;
         border-radius: 50%;
@@ -159,7 +163,7 @@ div.action-buttons {
         i {font-size: 14px;}
 
         &:hover {
-            background-color: rgba($color: $indigo, $alpha: .8);
+            background-color: rgba($color: $custom-color, $alpha: .8);
         }
     }
 }
@@ -168,19 +172,19 @@ div.action-buttons {
 
 // LOGIN & REGISTER
 
-div.login-box {
+div.auth-box {
     width: 320px;
     box-shadow: 0px 2px 2px lightgrey;
 }
 
-div.login-box-wrapper {
+div.auth-box-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 50px 0;
 
-    button.btn-login {
+    button.btn-auth {
         border: none;
         padding: 7px;
         width: 100%;
@@ -188,16 +192,16 @@ div.login-box-wrapper {
         font-weight: bold;
         letter-spacing: 1px;
         transition: all .1s;
-        background-color: $indigo;
+        background-color: $custom-color;
 
         &:hover {
-            background-color: rgba($color: $indigo, $alpha: .8);
+            background-color: rgba($color: $custom-color, $alpha: .8);
             border-radius: 15px;
         }
     }
 }
 
-div.login-header {
+div.auth-header {
     h1 {
         font-weight: bolder;
         font-size: 24px;
@@ -205,12 +209,12 @@ div.login-header {
     }
 }
 
-div.login-body {
+div.auth-body {
     margin: 30px 0;
     width: 250px;
 }
 
-div.login-footer {
+div.auth-footer {
     p {font-size: 14px;}
 }
 
