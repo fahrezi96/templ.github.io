@@ -18,7 +18,7 @@
             flex-direction: column;
             /* justify-content: center; */
             align-items: center;
-            margin-top: 20%;
+            margin-top: 15%;
         }
 
         div.error-box {
@@ -52,11 +52,16 @@
         }
 
         .nail {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 3px;
+            font-size: 25px;
             width: 20px;
             height: 20px;
             border-radius: 50%;
             background-image: linear-gradient(to bottom left, white, lightgrey, grey);
+            text-shadow: 2px 2px 3px grey;
             box-shadow: -2px 2px 5px 2px #2d3436;
         }
 
@@ -79,8 +84,8 @@
     <div class="error-container">
         <div class="error-box">
             <div class="top-nails">
-                <span class="nail"></span>
-                <span class="nail"></span>
+                <span class="nail">+</span>
+                <span class="nail">+</span>
             </div>
 
             <div class="error-text">
@@ -93,8 +98,8 @@
             </div>
 
             <div class="bottom-nails">
-                <span class="nail"></span>
-                <span class="nail"></span>
+                <span class="nail">+</span>
+                <span class="nail">+</span>
             </div>
         </div>
     </div>
