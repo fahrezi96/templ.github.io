@@ -31,6 +31,10 @@ $(document).ready(function() {
         });
     }
 
+    // tooltip n popover
+    $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="popover"]').popover();
+
     $(window).resize(function() { 
         // side nav container height
         var sideNav = $('.side-nav-container');
