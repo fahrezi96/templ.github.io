@@ -267,12 +267,21 @@ div.notifications-card {
             width: 25px; height: 25px;
             background-color: white;
             margin-left: 5px;
+            transition: all .2s;
+        }
+
+        a:hover {
+            border-radius: 50%;
         }
     }
 
     div.body-sect {
         padding: 5px;
         overflow-y: auto;
+
+        .alert {
+            border-left: solid 3px $grey;
+        }
     }
 }
 

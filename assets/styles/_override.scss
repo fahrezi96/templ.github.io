@@ -291,3 +291,9 @@ table.dataTable tr td:first-child {
         background-color: rgba($color: $custom-color, $alpha: 1);
     }
 }
+
+.alert {margin-bottom: 5px;}
+
+.alert-dismissible .close {
+    padding: 10px;
+}
