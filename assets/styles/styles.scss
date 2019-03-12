@@ -223,17 +223,16 @@ div.notifications-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // background-color: yellowgreen;
-    // padding: 5px;
 }
 
 div.notifications-card {
     flex-basis: 25%;
-    background-color: $grey;
-    padding: 5px;
+    background-color: $light-grey;
+    padding: 10px 5px;
 
     div.card-wrapper {
         background-color: white;
+        box-shadow: 0 0 5px grey;
     }
 
 
