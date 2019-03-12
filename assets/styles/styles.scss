@@ -219,4 +219,62 @@ div.auth-footer {
     p {font-size: 14px;}
 }
 
+div.notifications-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // background-color: yellowgreen;
+    // padding: 5px;
+}
+
+div.notifications-card {
+    flex-basis: 25%;
+    background-color: $grey;
+    padding: 5px;
+
+    div.card-wrapper {
+        background-color: white;
+    }
+
+
+    div.head-sect {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 5px;
+    }
+
+    div.head-sect.approve {background-color: $light-green;}
+    div.head-sect.pending {background-color: $orange;}
+    div.head-sect.reject {background-color: $deep-orange;}
+    div.head-sect.failed {background-color: $red;}
+    div.head-sect.reminder {background-color: $deep-purple;}
+
+    span.title-section {
+        font-size: 14px;
+    }
+
+    span.right-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+
+        span, i {font-size: 12px;}
+
+        span, a {
+            @extend %perfect-center;
+            width: 25px; height: 25px;
+            background-color: white;
+            margin-left: 5px;
+        }
+    }
+
+    div.body-sect {
+        padding: 5px;
+        overflow-y: auto;
+    }
+}
+
 @import "_responsive";

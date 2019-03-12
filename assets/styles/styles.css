@@ -9453,7 +9453,7 @@ table.dataTable tr td:first-child {
   table.dataTable tr td:first-child .dropdown-item:hover, table.dataTable tr td:first-child .dropdown-item:focus {
     background-color: #2196f3; }
 
-ul.head-nav-items div.dd-item span.notif-counter, div.logo-section, div.action-buttons a {
+ul.head-nav-items div.dd-item span.notif-counter, div.logo-section, div.action-buttons a, div.notifications-card span.right-section span, div.notifications-card span.right-section a {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -9602,6 +9602,51 @@ div.auth-body {
 
 div.auth-footer p {
   font-size: 14px; }
+
+div.notifications-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+div.notifications-card {
+  flex-basis: 25%;
+  background-color: #9e9e9e;
+  padding: 5px; }
+  div.notifications-card div.card-wrapper {
+    background-color: white; }
+  div.notifications-card div.head-sect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px; }
+  div.notifications-card div.head-sect.approve {
+    background-color: #8bc34a; }
+  div.notifications-card div.head-sect.pending {
+    background-color: #ff9800; }
+  div.notifications-card div.head-sect.reject {
+    background-color: #ff5722; }
+  div.notifications-card div.head-sect.failed {
+    background-color: #f44336; }
+  div.notifications-card div.head-sect.reminder {
+    background-color: #673ab7; }
+  div.notifications-card span.title-section {
+    font-size: 14px; }
+  div.notifications-card span.right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black; }
+    div.notifications-card span.right-section span, div.notifications-card span.right-section i {
+      font-size: 12px; }
+    div.notifications-card span.right-section span, div.notifications-card span.right-section a {
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      margin-left: 5px; }
+  div.notifications-card div.body-sect {
+    padding: 5px;
+    overflow-y: auto; }
 
 @media only screen and (max-width: 1024px) {
   div.left-section {
