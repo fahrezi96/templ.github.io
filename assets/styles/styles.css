@@ -9429,6 +9429,30 @@ ul.head-nav-items div.dd-item span.notif-counter {
   color: white;
   font-size: 11px; }
 
+table .dropdown-toggle::after {
+  margin-left: 0; }
+
+table.dataTable tr td:first-child {
+  display: flex;
+  justify-content: space-around; }
+  table.dataTable tr td:first-child .btn {
+    padding: 0 8px; }
+  table.dataTable tr td:first-child .dropdown-menu {
+    background-color: rgba(33, 150, 243, 0.8);
+    margin-left: 5px; }
+  table.dataTable tr td:first-child .dropdown-item {
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center; }
+    table.dataTable tr td:first-child .dropdown-item i {
+      font-size: 12px; }
+    table.dataTable tr td:first-child .dropdown-item span {
+      margin-left: 5px; }
+  table.dataTable tr td:first-child .dropdown-item:hover, table.dataTable tr td:first-child .dropdown-item:focus {
+    background-color: #2196f3; }
+
 ul.head-nav-items div.dd-item span.notif-counter, div.logo-section, div.action-buttons a {
   display: flex;
   justify-content: center;

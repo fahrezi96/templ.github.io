@@ -258,3 +258,36 @@ ul.head-nav-items {
         }
     }
 }
+
+table .dropdown-toggle::after {
+    margin-left: 0;
+}
+
+table.dataTable tr td:first-child {
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+        padding: 0 8px;
+    }
+
+    .dropdown-menu {
+        background-color: rgba($color: $custom-color, $alpha: .8);
+        margin-left: 5px;
+    }
+
+    .dropdown-item {
+        color: white;
+        padding: 5px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        i {font-size: 12px;}
+        span {margin-left: 5px;}
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        background-color: rgba($color: $custom-color, $alpha: 1);
+    }
+}
