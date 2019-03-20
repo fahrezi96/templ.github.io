@@ -15,21 +15,16 @@ $(document).ready(function() {
         $(this).next().slideToggle();
     });
 
-    // toggle side nav
-    if(Number(window.innerWidth) > 768) {
-        $(".toggle-btn a").click(function() {
+    $(".toggle-btn a").click(function() {
+        if(Number(window.innerWidth) > 768) {
+            sideNav.removeClass("show-nav");
             sideNav.toggleClass("hide-nav");
             $(".main-container").toggleClass("remove-margin");
-            // $(".collapsible-target").slideUp();
-        });
-    }
-
-    if(Number(window.innerWidth) <= 768) {
-        $(".toggle-btn a").click(function() {
+        } else {
+            sideNav.removeClass("hide-nav");
             sideNav.toggleClass("show-nav");
-            // $(".collapsible-target").slideUp();
-        });
-    }
+        }
+    });
 
     // tooltip n popover
     $('[data-toggle="tooltip"]').tooltip();   
@@ -45,5 +40,14 @@ $(document).ready(function() {
         var body = $('.body-section');
         var mainHeight = String(Number(window.innerHeight) - 185) + "px";
         body.css('min-height', mainHeight);
+
+        $(".toggle-btn a").click(function() {
+            if(Number(window.innerWidth) > 768) {
+                sideNav.toggleClass("hide-nav");
+                $(".main-container").toggleClass("remove-margin");
+            } else {
+                sideNav.toggleClass("show-nav");
+            }
+        });
     });
 });
