@@ -290,6 +290,8 @@ table.dataTable tr td:first-child {
     .dropdown-item:hover, .dropdown-item:focus {
         background-color: rgba($color: $custom-color, $alpha: 1);
     }
+
+    button.dd-btn {background-color: $custom-color; color: white;}
 }
 
 .alert {margin-bottom: 5px;}
