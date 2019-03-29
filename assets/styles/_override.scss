@@ -301,6 +301,32 @@ table.dataTable tr td:first-child {
 }
 
 .chart.Treant {
-    width: 768px;
+    // width: 768px;
     overflow: auto;
 }
+
+div.orgChart {
+    tr {
+        border-bottom: none;
+    }
+
+    .node h2 {
+        font-size: 12px;
+    }
+
+    .right {
+        float: none!important;
+    }
+
+    .left {
+        float: none!important;
+    }
+
+    td, th {
+        border-radius: 0;
+    }
+}
+
+// #create_pdf {
+//     background-color: yellowgreen;
+// }
