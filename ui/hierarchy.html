@@ -352,7 +352,7 @@
 
     <script src="../assets/scripts/scripts.js"></script>
 
-    <script src="../assets/treant/vendor/raphael.js"></script>
+    <script src="../assets/treant/vendor/raphael.js"></script> -->
     <script src="../assets/treant/Treant.js"></script>
     <script src="../assets/scripts/hierarchy.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
@@ -381,8 +381,8 @@
 		$(document).ready(function() {
 			org_chart = $('#orgChart').orgChart({
 				data: testData, // your data
-				// showControls: true, // display add or remove node button.
-				// allowEdit: true, // click the node's title to edit
+				showControls: false, // display add or remove node button.
+				allowEdit: false, // click the node's title to edit
 				// onAddNode: function(node){
 				// 	org_chart.newNode(node.data.id);
 				// },
@@ -391,15 +391,6 @@
 				// },
 				// onClickNode: function(node){},
 				newNodeText: 'Add' // text of add button
-
-                // data: testData, // your data
-                // showControls: true, // display add or remove node button.
-                // allowEdit: true, // click the node's title to edit
-                // onAddNode: function(node){},
-                // onDeleteNode: function(node){},
-                // onClickNode: function(node){},
-                // newNodeText: 'Add Child' // text of add button
-
 			});
 			
 		});
