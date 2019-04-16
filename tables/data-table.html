@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Muhamad Irgi Fahrezi">
+    <title>Data Table</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/datatables.css">
+    <link rel="stylesheet" href="../assets/styles/dataTables.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+
+</head>
+
+<body>
+
+    <div class="global-container">
+        <div class="header-container">
+            <div class="title-container">
+                <div class="logo-section">
+                    <a href="javascript:;">
+                        <i class="material-icons">spa</i> 
+                    </a>
+                </div>
+                <div class="text-section">
+                    <h1><a href="javascript:;">Templ.</a></h1>
+                </div>
+            </div>
+            <div class="head-nav-container">
+                <div class="left-section">
+                    <div class="toggle-btn">
+                        <a href="javascript:;">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <ul class="head-nav-items">
+                        <li>
+                            <a href="javascript:;"><i class="material-icons">notifications</i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><i class="material-icons">fullscreen</i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><i class="material-icons">settings</i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="../assets/images/img_user.png" width="30px" alt="user-thumbnail"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="side-nav-container">
+                <ul class="side-nav-wrapper">
+                    <li class="side-nav-item">
+                        <a href="../index.html">
+                            <i class="material-icons">folder_open</i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="javascript:;" class="collapsible-trigger">
+                            <i class="material-icons">folder_open</i>
+                            Tables
+                            <i class="material-icons grow-left arrow">keyboard_arrow_down</i>
+                        </a>
+                        <ul class="collapsible-target">
+                            <li class="side-nav-item">
+                                <a href="./common-table.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Common Table
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="./data-table.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Data Table
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="javascript:;" class="collapsible-trigger">
+                            <i class="material-icons">folder_open</i>
+                            Forms
+                            <i class="material-icons grow-left arrow">keyboard_arrow_down</i>
+                        </a>
+                        <ul class="collapsible-target">
+                            <li class="side-nav-item">
+                                <a href="../forms/form-elements.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Form Elements
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../forms/form-layouts.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Form Layouts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="javascript:;" class="collapsible-trigger">
+                            <i class="material-icons">folder_open</i>
+                            UI Component
+                            <i class="material-icons grow-left arrow">keyboard_arrow_down</i>
+                        </a>
+                        <ul class="collapsible-target">
+                            <li class="side-nav-item">
+                                <a href="../ui/typography.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Typography
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/alert.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Alert
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/badge-progress.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Badge & Progress
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/button.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Button
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/collapse-tabs.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Collapse & Tabs
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/colors.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Colors
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/dropdown.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Dropdown
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/list-group.html">
+                                    <i class="material-icons">folder_open</i>
+                                    List Group
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/modal.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Modal
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/pagination.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Pagination
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../ui/popovers.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Popovers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="javascript:;" class="collapsible-trigger">
+                            <i class="material-icons">folder_open</i>
+                            Pages
+                            <i class="material-icons grow-left arrow">keyboard_arrow_down</i>
+                        </a>
+                        <ul class="collapsible-target">
+                            <li class="side-nav-item">
+                                <a href="../pages/login.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Login Page
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../pages/register.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Register Page
+                                </a>
+                            </li>
+                            <li class="side-nav-item">
+                                <a href="../pages/404.html">
+                                    <i class="material-icons">folder_open</i>
+                                    Error 404
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-container">
+                <div class="main-section">
+                    <div class="head-section content-padding">
+                        <h2 class="page-title">Data Table</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="container-fluid body-section bg-light-grey">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content-wrapper">
+                                    <h3 class="content-title">Data Table</h3>
+                                    <div class="content-body">
+                                        <table id="advTable" class="table table-striped table-bordered" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>NAME</th>
+                                                    <th>ADDRESS</th>
+                                                    <th>TELP. NO</th>
+                                                    <th>ORDER STATUS</th>
+                                                    <th>ACTIONS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody> 
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section content-padding">
+                    <span>&copy; Copyright 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/scripts/jquery.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
+    <script src="../assets/scripts/datatables.js"></script>
+    <script src="../assets/scripts/jquery.dataTables.min.js"></script>
+    <script src="../assets/scripts/dataTables.bootstrap4.min.js"></script>
+
+    <script src="../assets/scripts/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var data = [
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Weiss Fearlen",
+                    "Dortmund",
+                    "64583929382",
+                    "<span class='badge badge-success'>Done</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Edison Young",
+                    "Singapore",
+                    "64583929382",
+                    "<span class='badge badge-warning'>Pending</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Natasha Lushkova",
+                    "St. Petersburg",
+                    "64583929382",
+                    "<span class='badge badge-success'>Done</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Jonas Grenade",
+                    "Utah",
+                    "64583929382",
+                    "<span class='badge badge-danger'>Failed</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Raj Kashev",
+                    "Kabul",
+                    "64583929382",
+                    "<span class='badge badge-warning'>Pending</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Weiss Fearlen",
+                    "Dortmund",
+                    "64583929382",
+                    "<span class='badge badge-success'>Done</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Edison Young",
+                    "Singapore",
+                    "64583929382",
+                    "<span class='badge badge-warning'>Pending</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Natasha Lushkova",
+                    "St. Petersburg",
+                    "64583929382",
+                    "<span class='badge badge-success'>Done</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Jonas Grenade",
+                    "Utah",
+                    "64583929382",
+                    "<span class='badge badge-danger'>Failed</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Raj Kashev",
+                    "Kabul",
+                    "64583929382",
+                    "<span class='badge badge-warning'>Pending</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Weiss Fearlen",
+                    "Dortmund",
+                    "64583929382",
+                    "<span class='badge badge-success'>Done</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Edison Young",
+                    "Singapore",
+                    "64583929382",
+                    "<span class='badge badge-warning'>Pending</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Natasha Lushkova",
+                    "St. Petersburg",
+                    "64583929382",
+                    "<span class='badge badge-success'>Done</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Jonas Grenade",
+                    "Utah",
+                    "64583929382",
+                    "<span class='badge badge-danger'>Failed</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ],
+                [
+                    `
+                    <div class="dropdown dropright">
+                        <button class="btn dd-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">folder</i>
+                                <span>Open Task</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>View Flow</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">person</i>
+                                <span>Redirect</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="material-icons">share</i>
+                                <span>Delegate</span>
+                            </a>
+                        </div>
+                    </div>
+                    `,
+                    "Raj Kashev",
+                    "Kabul",
+                    "64583929382",
+                    "<span class='badge badge-warning'>Pending</span>",
+                    `<div class="action-buttons">
+                        <a href="javascript:;" class="edit-btn">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="javascript:;" class="remove-btn">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </div>`
+                ]
+            ];
+
+            $('#advTable').DataTable({
+                data: data,
+            });
+        });
+    </script>
+</body>
+
+</html>

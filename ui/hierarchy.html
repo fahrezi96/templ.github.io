@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta author="Muhamad Irgi Fahrezi">
-    <title>Dashboard</title>
+    <title>Hierarchy</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/treant/Treant.css">
+    <link href="../assets/styles/jquery.orgchart.css" rel="stylesheet">
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <style>
+        .chart { height: 600px; margin: 5px; width: 900px; margin: 15px auto; /*border: solid 1px gray;*/ } 
+        .Treant > p { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: bold; font-size: 12px; }
+        .node-name { font-weight: bold;}
 
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+        .nodeExample1 {
+            padding: 2px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: #ffffff;
+            border: 1px solid #000;
+            width: 200px;
+            font-family: Tahoma;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .nodeExample1 img {
+            margin-right:  10px;
+        }
+    </style>
 
 </head>
 
@@ -109,7 +130,7 @@
                         </li>
                         <li class="dropdown">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="./assets/images/img_user.png" width="30px" alt="user-thumbnail">
+                                <img src="../assets/images/img_user.png" width="30px" alt="user-thumbnail">
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Profil</a>
@@ -124,7 +145,7 @@
             <div class="side-nav-container">
                 <ul class="side-nav-wrapper">
                     <li class="side-nav-item">
-                        <a href="./index.html">
+                        <a href="../index.html">
                             <i class="material-icons">folder_open</i>
                             Dashboard
                         </a>
@@ -137,13 +158,13 @@
                         </a>
                         <ul class="collapsible-target">
                             <li class="side-nav-item">
-                                <a href="./tables/common-table.html">
+                                <a href="../tables/common-table.html">
                                     <i class="material-icons">folder_open</i>
                                     Common Table
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./tables/data-table.html">
+                                <a href="../tables/data-table.html">
                                     <i class="material-icons">folder_open</i>
                                     Data Table
                                 </a>
@@ -158,13 +179,13 @@
                         </a>
                         <ul class="collapsible-target">
                             <li class="side-nav-item">
-                                <a href="./forms/form-elements.html">
+                                <a href="../forms/form-elements.html">
                                     <i class="material-icons">folder_open</i>
                                     Form Elements
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./forms/form-layouts.html">
+                                <a href="../forms/form-layouts.html">
                                     <i class="material-icons">folder_open</i>
                                     Form Layouts
                                 </a>
@@ -179,73 +200,73 @@
                         </a>
                         <ul class="collapsible-target">
                             <li class="side-nav-item">
-                                <a href="./ui/typography.html">
+                                <a href="../ui/typography.html">
                                     <i class="material-icons">folder_open</i>
                                     Typography
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/alert.html">
+                                <a href="../ui/alert.html">
                                     <i class="material-icons">folder_open</i>
                                     Alert
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/badge-progress.html">
+                                <a href="../ui/badge-progress.html">
                                     <i class="material-icons">folder_open</i>
                                     Badge & Progress
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/button.html">
+                                <a href="../ui/button.html">
                                     <i class="material-icons">folder_open</i>
                                     Button
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/collapse-tabs.html">
+                                <a href="../ui/collapse-tabs.html">
                                     <i class="material-icons">folder_open</i>
                                     Collapse & Tabs
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/colors.html">
+                                <a href="../ui/colors.html">
                                     <i class="material-icons">folder_open</i>
                                     Colors
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/dropdown.html">
+                                <a href="../ui/dropdown.html">
                                     <i class="material-icons">folder_open</i>
                                     Dropdown
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/list-group.html">
+                                <a href="../ui/list-group.html">
                                     <i class="material-icons">folder_open</i>
                                     List Group
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/modal.html">
+                                <a href="../ui/modal.html">
                                     <i class="material-icons">folder_open</i>
                                     Modal
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/pagination.html">
+                                <a href="../ui/pagination.html">
                                     <i class="material-icons">folder_open</i>
                                     Pagination
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/popovers.html">
+                                <a href="../ui/popovers.html">
                                     <i class="material-icons">folder_open</i>
                                     Popovers
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./ui/notifications.html">
+                                <a href="../ui/notifications.html">
                                     <i class="material-icons">folder_open</i>
                                     Notifications
                                 </a>
@@ -266,19 +287,19 @@
                         </a>
                         <ul class="collapsible-target">
                             <li class="side-nav-item">
-                                <a href="./pages/login.html">
+                                <a href="../pages/login.html">
                                     <i class="material-icons">folder_open</i>
                                     Login Page
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./pages/register.html">
+                                <a href="../pages/register.html">
                                     <i class="material-icons">folder_open</i>
                                     Register Page
                                 </a>
                             </li>
                             <li class="side-nav-item">
-                                <a href="./pages/404.html">
+                                <a href="../pages/404.html">
                                     <i class="material-icons">folder_open</i>
                                     Error 404
                                 </a>
@@ -290,11 +311,11 @@
             <div class="main-container">
                 <div class="main-section">
                     <div class="head-section content-padding">
-                        <h2 class="page-title">Dashboard</h2>
+                        <h2 class="page-title">Hierarchy</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                <li class="breadcrumb-item active" aria-current="page">Hierarchy</li>
                             </ol>
                         </nav>
                     </div>
@@ -302,8 +323,17 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="content-wrapper">
-                                    <h3 class="content-title">Some Title</h3>
-                                    <div class="content-body"><p>Some Text...</p></div>
+                                    <h3 class="content-title">Hierarchy</h3>
+                                    <div class="content-body">
+
+                                        <button id="create_pdf">Generate PDF</button>
+                                        <br>
+                                        <!-- <div class="chart area" id="basic-example"></div> -->
+                                        <div class="org-wrapper">
+                                            <div id="orgChart" class="area"></div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -316,11 +346,64 @@
         </div>
     </div>
 
-    <script src="./assets/scripts/jquery.js"></script>
-    <script src="./assets/scripts/popper.js"></script>
-    <script src="./assets/scripts/bootstrap.js"></script>
+    <script src="../assets/scripts/jquery.js"></script>
+    <script src="../assets/scripts/popper.js"></script>
+    <script src="../assets/scripts/bootstrap.js"></script>
 
-    <script src="./assets/scripts/scripts.js"></script>
+    <script src="../assets/scripts/scripts.js"></script>
+
+    <script src="../assets/treant/vendor/raphael.js"></script>
+    <script src="../assets/treant/Treant.js"></script>
+    <script src="../assets/scripts/hierarchy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script> -->
+    <script src="../assets/scripts/jquery.orgchart.js"></script>
+    <!-- <script src="https://rawgit.com/dabeng/OrgChart/master/demo/js/jspdf.min.js"></script> -->
+    
+    <script src="../assets/scripts/xpdf.js"></script>
+    <script src="../assets/scripts/helper.js"></script>
+
+    <script>
+
+        // new Treant( chart_config );
+
+        var testData = [
+            {id: 1, name: 'My Organization', parent: 0},
+		    {id: 2, name: 'CEO Office <br/> <b>Uuy Spd</b>', parent: 1},
+		    {id: 3, name: 'Division 1 <br/> <b>Uuy Spd</b>', parent: 1},
+		    {id: 4, name: 'Division 2 <br/> <b>Uuy Spd</b>', parent: 1},
+		    {id: 6, name: 'Division 3 <br/> <b>Uuy Spd</b>', parent: 1},
+		    {id: 7, name: 'Division 4 <br/> <b>Uuy Spd</b>', parent: 1},
+		    {id: 8, name: 'Division 5 <br/> <b>Uuy Spd</b>', parent: 1},
+		    {id: 5, name: 'Sub Division <br/> <b>Uuy Spd</b>', parent: 3},
+		];
+
+		$(document).ready(function() {
+			org_chart = $('#orgChart').orgChart({
+				data: testData, // your data
+				// showControls: true, // display add or remove node button.
+				// allowEdit: true, // click the node's title to edit
+				// onAddNode: function(node){
+				// 	org_chart.newNode(node.data.id);
+				// },
+				// onDeleteNode: function(node){
+				// 	org_chart.deleteNode(node.data.id);
+				// },
+				// onClickNode: function(node){},
+				newNodeText: 'Add' // text of add button
+
+                // data: testData, // your data
+                // showControls: true, // display add or remove node button.
+                // allowEdit: true, // click the node's title to edit
+                // onAddNode: function(node){},
+                // onDeleteNode: function(node){},
+                // onClickNode: function(node){},
+                // newNodeText: 'Add Child' // text of add button
+
+			});
+			
+		});
+    </script>
 </body>
 
 </html>
