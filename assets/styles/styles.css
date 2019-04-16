@@ -9476,6 +9476,12 @@ div.orgChart .left {
 div.orgChart td, div.orgChart th {
   border-radius: 0; }
 
+div.orgChart div.node {
+  width: auto !important;
+  height: auto !important;
+  min-width: 100px;
+  min-height: 60px; }
+
 ul.head-nav-items div.dd-item span.notif-counter, div.logo-section, div.action-buttons a, div.notifications-card span.right-section span, div.notifications-card span.right-section a {
   display: flex;
   justify-content: center;

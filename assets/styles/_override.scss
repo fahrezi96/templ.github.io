@@ -327,6 +327,13 @@ div.orgChart {
     }
 }
 
+div.orgChart div.node {
+    width: auto!important;
+    height: auto!important;
+    min-width: 100px;
+    min-height: 60px;
+}
+
 // #create_pdf {
 //     background-color: yellowgreen;
 // }
