@@ -9482,6 +9482,9 @@ div.orgChart div.node {
   min-width: 100px;
   min-height: 60px; }
 
+.toggle-node {
+  display: none; }
+
 ul.head-nav-items div.dd-item span.notif-counter, div.logo-section, div.action-buttons a, div.notifications-card span.right-section span, div.notifications-card span.right-section a {
   display: flex;
   justify-content: center;
